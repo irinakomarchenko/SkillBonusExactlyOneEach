@@ -1,0 +1,6 @@
+Results for each participant:
+Participant 1: base = 123.00, bonus = Fixed, result = 668.00
+Participant 2: base = 1234.00, bonus = Fixed, result = 1779.00
+Participant 3: base = 897.00, bonus = Fixed, result = 1442.00
+
+Total Skills after Bonuses: 3889.00

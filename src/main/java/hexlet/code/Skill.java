@@ -1,4 +1,3 @@
 package hexlet.code;
 
-public record Skill(int index, double base, double diff) {
-}
+public record Skill(int index, double base, double diff) {}
