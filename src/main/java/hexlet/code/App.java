@@ -6,6 +6,7 @@ import java.io.OutputStreamWriter;
 import java.io.PrintWriter;
 import java.nio.charset.StandardCharsets;
 import java.time.LocalDate;
+import java.io.File;
 import java.util.*;
 
 public class App {
@@ -33,7 +34,15 @@ public class App {
         double total = 0;
 
         String date = LocalDate.now().toString();
-        String fileName = "result-" + date + ".txt";
+        String reportsDir = "reports";
+        String fileName = reportsDir + File.separator + "result-" + date + ".txt";
+
+
+        File directory = new File(reportsDir);
+        if (!directory.exists()) {
+            directory.mkdir();
+        }
+
 
         try (PrintWriter writer = new PrintWriter(new OutputStreamWriter(new FileOutputStream(fileName), StandardCharsets.UTF_8))) {
             writer.println("Results for each participant:");
